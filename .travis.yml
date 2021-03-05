@@ -7,8 +7,6 @@ services:
 
 before_script: pip install docker-compose
 
-install:
-  - pip install -r requirements.txt
 
 script:
   - docker-compose run app python manage.py test && flake8
